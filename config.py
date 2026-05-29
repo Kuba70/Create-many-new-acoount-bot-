@@ -3,19 +3,19 @@
 # =============================================================================
 
 # --- Twoja lokalna strona rejestracji ---
-REGISTRATION_URL = "https://app.lowokazje.pl/sign-up"  # <-- zmień na swój adres
+REGISTRATION_URL = ""  # <-- zmień na swój adres
 
 # --- Selektory pól formularza rejestracji ---
 # Sprawdź je w DevTools przeglądarki (F12 → Inspector)
 SELECTORS = {
-    "email_field":    "#m_email",          # <-- selektor pola email
-    "password_field": ":nth-match(input[type=\"password\"], 1)",       # <-- selektor pola hasło (pierwsze na stronie)
-    "confirm_password_field": ":nth-match(input[type=\"password\"], 2)",      # <-- selektor potwierdzenia hasła (drugie na stronie)
+    "email_field":    "",          # <-- selektor pola email
+    "password_field": "",       # <-- selektor pola hasło (pierwsze na stronie)
+    "confirm_password_field": "",      # <-- selektor potwierdzenia hasła (drugie na stronie)
     "checkboxes":     [                  # <-- wpisz selektory checkboxów/przełączników (np. regulamin)
-        ":nth-match(label.vue-switcher, 1)",
-        ":nth-match(label.vue-switcher, 2)"
+        ":nth-match",
+        ":nth-match"
     ],
-    "submit_button":  "#m_login_forget_password_submit",         # <-- selektor przycisku "Zarejestruj"
+    "submit_button":  "",         # <-- selektor przycisku "Zarejestruj"
 }
 
 # --- Ustawienia hasła ---
