@@ -1,0 +1,4 @@
+test_10m.py
+.venv
+__pycache__/
+*.pyc
